@@ -5,7 +5,7 @@ A simple console Pong game written in C# with an unbeatable opponent.
 ## Features
 
 - Console-based Pong game
-- Unbeatable AI opponent
+- Unbeatable opponent
 - Smooth keyboard controls (W / S)
 - Ball collision detection
 - Dynamic game speed that increases over time
