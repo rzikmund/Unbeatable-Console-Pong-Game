@@ -146,12 +146,12 @@ Action collision_detection = () =>
     }
     
     //bot paddle
-    if ((ball_X >= bot_paddle_X -1 && ball_Y >= bot_paddle_Y) && ball_Y <= bot_paddle_bottom && ball_direction == 2)
+    if ((ball_X == bot_paddle_X - 1 || ball_X == bot_paddle_X || ball_X == bot_paddle_X + 1) && ball_Y >= bot_paddle_Y - 1 && ball_Y <= bot_paddle_bottom + 1 && ball_direction == 2)
     {
         ball_direction = 1;
         
     }
-    if ((ball_X >= bot_paddle_X + 1 && ball_Y >= bot_paddle_Y) && ball_Y <= bot_paddle_bottom && ball_direction == -2)
+    if ((ball_X == bot_paddle_X - 1 || ball_X == bot_paddle_X || ball_X == bot_paddle_X + 1) && ball_Y >= bot_paddle_Y - 1 && ball_Y <= bot_paddle_bottom + 1 && ball_direction == -2)
     {
         ball_direction = -1;
         
